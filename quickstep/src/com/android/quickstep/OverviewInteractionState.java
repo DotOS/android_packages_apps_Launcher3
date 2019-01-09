@@ -90,8 +90,9 @@ public class OverviewInteractionState {
 
     // These are updated on the background thread
     private ISystemUiProxy mISystemUiProxy;
-    private boolean mSwipeUpEnabled = true;
+    private boolean mSwipeUpEnabled;
     private float mBackButtonAlpha = 1;
+    private boolean mSwipeUpEnabledDefault;
 
     private Runnable mOnSwipeUpSettingChangedListener;
 
@@ -103,15 +104,16 @@ public class OverviewInteractionState {
         // For example, send back alpha on uihandler to avoid flickering when setting its visibility
         mUiHandler = new Handler(this::handleUiMessage);
         mBgHandler = new Handler(UiThreadHelper.getBackgroundLooper(), this::handleBgMessage);
+        mSwipeUpEnabledDefault =
+                !getSystemBooleanRes(SWIPE_UP_SETTING_AVAILABLE_RES_NAME) ||
+                        getSystemBooleanRes(SWIPE_UP_ENABLED_DEFAULT_RES_NAME);
+        mSwipeUpEnabled = Settings.Secure.getInt(context.getContentResolver(),
+                SWIPE_UP_SETTING_NAME,
+                mSwipeUpEnabledDefault ? 1 : 0) == 1;
 
-        if (getSystemBooleanRes(SWIPE_UP_SETTING_AVAILABLE_RES_NAME)) {
-            mSwipeUpSettingObserver = new SwipeUpGestureEnabledSettingObserver(mUiHandler,
-                    context.getContentResolver());
-            mSwipeUpSettingObserver.register();
-        } else {
-            mSwipeUpSettingObserver = null;
-            mSwipeUpEnabled = getSystemBooleanRes(SWIPE_UP_ENABLED_DEFAULT_RES_NAME);
-        }
+        mSwipeUpSettingObserver = new SwipeUpGestureEnabledSettingObserver(mUiHandler,
+                context.getContentResolver());
+        mSwipeUpSettingObserver.register();
     }
 
     public boolean isSwipeUpGestureEnabled() {
