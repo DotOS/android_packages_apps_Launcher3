@@ -57,6 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_desc">Swipe vertically downward in recents view to clear all apps</string>
     <string name="pref_homescreen_dt_gestures_title">Double tap</string>
     <string name="pref_homescreen_swipe_down_gestures_title">Swipe down</string>
+    <string name="pref_homescreen_swipe_up_gestures_title">Swipe up</string>
     <string name="pref_homescreen_gestures_none">None</string>
     <string name="pref_homescreen_gestures_sleep">Screen off</string>
     <string name="pref_homescreen_gestures_torch">Flashlight</string>
@@ -67,6 +68,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_gestures_screenshot">Screenshot</string>
     <string name="pref_homescreen_gestures_notifications">Notifications</string>
     <string name="pref_homescreen_gestures_qs_panel">QS panel</string>
+    <string name="pref_homescreen_gesture_all_apps">All apps</string>
 
     <!-- Google Feed -->
     <string name="google_feed_title">Enable Google App and Search</string>

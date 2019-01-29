@@ -256,6 +256,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
     private GestureDetector mGestureListener;
     private int mDoubleGestureMode;
     private int mSwipeDownGestureMode;
+    private int mSwipeUpGestureMode;
 
     /**
      * Used to inflate the Workspace from XML.
@@ -295,6 +296,8 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                 getDevicePrefs(getContext()).getString("pref_homescreen_dt_gestures", "0"));
         mSwipeDownGestureMode = Integer.valueOf(
                 getDevicePrefs(getContext()).getString("pref_homescreen_swipe_down_gestures", "7"));
+        mSwipeUpGestureMode = Integer.valueOf(
+                getDevicePrefs(getContext()).getString("pref_homescreen_swipe_up_gestures", "9"));
         mGestureListener =
                 new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
@@ -317,6 +320,9 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                             // Swipe down gestures
                             Gestures(e1, mSwipeDownGestureMode);
                         }
+                    } else if (e1.getY() - e2.getY() > 100) {
+                           // Swipe up gestures
+                           Gestures(e1, mSwipeUpGestureMode);
                     }
                 } catch (Exception e) {
 
@@ -356,6 +362,9 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                 break;
             case 8: // QS panel
                 DOTUtils.toggleQsPanel();
+                break;
+            case 9: // Open drawer
+                launchAllApps();
                 break;
         }
     }
@@ -3565,5 +3574,10 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
             Toast.makeText(context, R.string.pref_homescreen_dt_gestures_google_toast,
                     Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void launchAllApps() {
+        if (mLauncher != null)
+            mLauncher.getStateManager().goToState(ALL_APPS);
     }
 }
