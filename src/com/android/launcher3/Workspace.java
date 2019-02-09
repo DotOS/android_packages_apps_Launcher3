@@ -2012,8 +2012,10 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                     item.spanX = resultSpan[0];
                     item.spanY = resultSpan[1];
                     AppWidgetHostView awhv = (AppWidgetHostView) cell;
-                    AppWidgetResizeFrame.updateWidgetSizeRanges(awhv, mLauncher, resultSpan[0],
-                            resultSpan[1]);
+                    if (!Utilities.isDesktopLocked(getContext())) {
+                        AppWidgetResizeFrame.updateWidgetSizeRanges(awhv, mLauncher, resultSpan[0],
+                                resultSpan[1]);
+                    }
                 }
 
                 if (foundCell) {
@@ -2054,7 +2056,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                         if (pInfo != null && !d.accessibleDrag) {
                             onCompleteRunnable = new Runnable() {
                                 public void run() {
-                                    if (!isPageInTransition()) {
+                                    if (!isPageInTransition() && !Utilities.isDesktopLocked(getContext())) {
                                         AppWidgetResizeFrame.showForWidget(hostView, cellLayout);
                                     }
                                 }
@@ -2707,7 +2709,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
             AppWidgetHostView finalView = isWidget ?
                     ((PendingAddWidgetInfo) pendingInfo).boundWidget : null;
 
-            if (finalView != null && updateWidgetSize) {
+            if (finalView != null && updateWidgetSize && !Utilities.isDesktopLocked(getContext())) {
                 AppWidgetResizeFrame.updateWidgetSizeRanges(finalView, mLauncher, item.spanX,
                         item.spanY);
             }
