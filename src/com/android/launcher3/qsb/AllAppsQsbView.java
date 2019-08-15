@@ -18,7 +18,6 @@ package com.android.launcher3.qsb;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
@@ -113,8 +112,9 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        mGsaStatus.register(LauncherCallbacks.SEARCH_PACKAGE);
-        onExtractedColorsChanged(mWallpaperColorInfo);
+        WallpaperColorInfo instance = WallpaperColorInfo.getInstance(getContext());
+        instance.addOnChangeListener(this);
+        onExtractedColorsChanged(instance);
         updateConfiguration();
     }
 
@@ -127,12 +127,7 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
 
     @Override
     public void onExtractedColorsChanged(WallpaperColorInfo wallpaperColorInfo) {
-        final Configuration config = mContext.getResources().getConfiguration();
-        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
-        setColor(ColorUtils.compositeColors(
-                ColorUtils.compositeColors(nightModeWantsDarkTheme ? 0xD9282828 : 0xCCFFFFFF, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)),
-                wallpaperColorInfo.getMainColor()));
+        setColor(ColorUtils.compositeColors(ColorUtils.compositeColors(Themes.getAttrBoolean(mLauncher, R.attr.isMainColorDark) ? -335544321 : -855638017, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)), wallpaperColorInfo.getMainColor()));
     }
 
     @Override

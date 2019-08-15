@@ -22,7 +22,6 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Process;
@@ -30,6 +29,7 @@ import android.os.StrictMode;
 import android.os.UserHandle;
 import android.util.Log;
 import android.view.ActionMode;
+import android.view.Surface;
 import android.view.View;
 import android.widget.Toast;
 
@@ -66,8 +66,6 @@ public abstract class BaseDraggingActivity extends BaseActivity
 
     private DisplayRotationListener mRotationListener;
 
-    private UiModeManager mUiModeManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,10 +78,8 @@ public abstract class BaseDraggingActivity extends BaseActivity
         int themeRes = getThemeRes(wallpaperColorInfo);
         if (themeRes != mThemeRes) {
             mThemeRes = themeRes;
-            //setTheme(themeRes);
+            setTheme(themeRes);
         }
-        mUiModeManager = this.getSystemService(UiModeManager.class);
-        updateTheme(wallpaperColorInfo);
     }
 
     @Override
@@ -276,17 +272,5 @@ public abstract class BaseDraggingActivity extends BaseActivity
     public interface OnStartCallback<T extends BaseDraggingActivity> {
 
         void onActivityStart(T activity);
-    }
-
-    private void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
-        final Configuration config = this.getResources().getConfiguration();
-        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
-        if (nightModeWantsDarkTheme) {
-            setTheme(wallpaperColorInfo.supportsDarkText() ? R.style.AppTheme_Dark_DarkText :
-                    R.style.AppTheme_Dark);
-        } else {
-            setTheme(mThemeRes);
-        }
     }
 }

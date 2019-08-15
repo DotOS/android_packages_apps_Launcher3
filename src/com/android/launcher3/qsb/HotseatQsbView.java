@@ -53,12 +53,15 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 
 import java.util.List;
 
-public class HotseatQsbView extends BaseQsbView {
+public class HotseatQsbView extends BaseQsbView implements WallpaperColorInfo.OnChangeListener {
 
     private BroadcastReceiver mSearchReceiver;
 
     public Context mContext;
     private QsbConfiguration mQsbConfig;
+
+    private int mThemeRes = R.style.AppTheme;
+    WallpaperColorInfo mWallpaperColorInfo;
 
     public HotseatQsbView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -79,6 +82,15 @@ public class HotseatQsbView extends BaseQsbView {
         };
         mQsbConfig = QsbConfiguration.getInstance(context);
         setOnClickListener(this);
+
+        // Update theme
+        WallpaperColorInfo wallpaperColorInfo = WallpaperColorInfo.getInstance(context);
+        wallpaperColorInfo.addOnChangeListener(this);
+        int themeRes = getThemeRes(wallpaperColorInfo);
+        if (themeRes != mThemeRes) {
+            mThemeRes = themeRes;
+        }
+        updateTheme(wallpaperColorInfo);
     }
 
     @Override
@@ -89,7 +101,19 @@ public class HotseatQsbView extends BaseQsbView {
         }
     }
 
+    protected int getThemeRes(WallpaperColorInfo wallpaperColorInfo) {
+        if (wallpaperColorInfo.isDark()) {
+            return wallpaperColorInfo.supportsDarkText() ?
+                    R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark;
+        } else {
+            return wallpaperColorInfo.supportsDarkText() ?
+                    R.style.AppTheme_DarkText : R.style.AppTheme;
+        }
+    }
 
+    private void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
+        mWallpaperColorInfo = wallpaperColorInfo;
+    }
 
     @Override
     public void onAttachedToWindow() {

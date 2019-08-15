@@ -20,7 +20,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -60,11 +59,10 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.graphics.NinePatchDrawHelper;
 import com.android.launcher3.graphics.ShadowGenerator.Builder;
-import com.android.launcher3.uioverrides.WallpaperColorInfo;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.util.TransformingTouchDelegate;
 
-public abstract class BaseQsbView extends FrameLayout implements OnClickListener, OnLongClickListener, Insettable, WallpaperColorInfo.OnChangeListener {
+public abstract class BaseQsbView extends FrameLayout implements OnClickListener, OnLongClickListener, Insettable {
 
     public static final Rect mSrcRect = new Rect();
     public final Paint mShadowPaint = new Paint(1);
@@ -93,9 +91,6 @@ public abstract class BaseQsbView extends FrameLayout implements OnClickListener
     private int mColorAlpha;
     protected int mResult;
 
-    protected int mThemeRes = R.style.AppTheme;
-    protected WallpaperColorInfo mWallpaperColorInfo;
-
     protected abstract int getWidth(int width);
 
     public abstract void startSearch(String initialQuery, int result);
@@ -117,29 +112,6 @@ public abstract class BaseQsbView extends FrameLayout implements OnClickListener
         mQsbDelegate = new TransformingTouchDelegate(this);
         setTouchDelegate(mQsbDelegate);
         mShadowPaint.setColor(-1);
-
-        // Update theme
-        WallpaperColorInfo wallpaperColorInfo = WallpaperColorInfo.getInstance(context);
-        wallpaperColorInfo.addOnChangeListener(this);
-        int themeRes = getThemeRes(wallpaperColorInfo);
-        if (themeRes != mThemeRes) {
-            mThemeRes = themeRes;
-        }
-        updateTheme(wallpaperColorInfo);
-    }
-
-    protected int getThemeRes(WallpaperColorInfo wallpaperColorInfo) {
-        if (wallpaperColorInfo.isDark()) {
-            return wallpaperColorInfo.supportsDarkText() ?
-                    R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark;
-        } else {
-            return wallpaperColorInfo.supportsDarkText() ?
-                    R.style.AppTheme_DarkText : R.style.AppTheme;
-        }
-    }
-
-    protected void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
-        mWallpaperColorInfo = wallpaperColorInfo;
     }
 
     @Override
