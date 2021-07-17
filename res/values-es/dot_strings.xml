@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 dotOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_show_google_app">Mostrar aplicación de Google</string>
+    <string name="msg_minus_one_on_left">Cuando se desliza hacia la izquierda desde la pantalla de inicio principal</string>
+    <string name="msg_minus_one_on_right">Cuando se desliza hacia la derecha desde la pantalla de inicio principal</string>
+    <string name="smartspace_preferences">Preferencias</string>
+    <string name="show_quickspace_title">De Un Vistazo</string>
+    <string name="show_quickspace_summary">Mostrar en la parte superior de la pantalla de inicio</string>
+    <string name="state_loading">Aplicando\u2026</string>
+    <string name="pref_dt_gesture_title">Gesto de doble toque</string>
+    <string name="pref_dt_gesture_summary">Toca dos veces en un espacio vacío para apagar la pantalla</string>
+    <string name="allow_swipe_down_clearall_title">Desliza hacia abajo para borrar todas las aplicaciones recientes</string>
+    <string name="allow_swipe_down_clearall_desc">Activar para limpiar todas las aplicaciones en la pantalla de recientes al deslizar hacia abajo</string>
+    <string name="trust_apps_manager_name">Aplicaciones ocultas</string>
+    <string name="trust_apps_auth_manager">Desbloquear para administrar las aplicaciones ocultas</string>
+    <string name="trust_apps_loading">Cargando\u2026</string>
+    <string name="trust_apps_no_lock_error">Por favor, configure un bloqueo de pantalla seguro para restringir el acceso a las aplicaciones</string>
+    <string name="trust_apps_help">Ayuda</string>
+    <string name="trust_app_summary">Ocultar aplicaciones del cajón</string>
+    <string name="trust_apps_info_hidden">Las aplicaciones ocultas y sus widgets están ocultos del cajón</string>
+    <string name="suggestion_pref_screen_title">Sugerencias</string>
+    <string name="suggestion_pref_screen_desc">Para todas las aplicaciones y sugerencias de pantalla de inicio</string>
+    <string name="two_line_labels">Permitir dos líneas de etiquetas en el escritorio</string>
+    <string name="icon_size_title">Tamaño de icono</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 dotOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_show_google_app">显示 Google 应用</string>
+    <string name="msg_minus_one_on_left">当您从主屏幕向左滑动时</string>
+    <string name="msg_minus_one_on_right">当您从主屏幕向右滑动时</string>
+    <string name="smartspace_preferences">首选项</string>
+    <string name="show_quickspace_title">速览</string>
+    <string name="show_quickspace_summary">在主屏幕顶部显示</string>
+    <string name="state_loading">正在应用\u2026</string>
+    <string name="pref_dt_gesture_title">双击手势</string>
+    <string name="pref_dt_gesture_summary">双击空白处以关闭屏幕</string>
+    <string name="allow_swipe_down_clearall_title">向下滑动清除所有最近任务</string>
+    <string name="allow_swipe_down_clearall_desc">启用向下滑动以清除概览屏幕上的所有最近任务</string>
+    <string name="trust_apps_manager_name">隐藏应用</string>
+    <string name="trust_apps_auth_manager">解锁以管理隐藏应用</string>
+    <string name="trust_apps_loading">正在加载\u2026</string>
+    <string name="trust_apps_no_lock_error">请设置一个安全锁屏密码以限制应用访问</string>
+    <string name="trust_apps_help">帮助</string>
+    <string name="trust_app_summary">从抽屉隐藏应用</string>
+    <string name="trust_apps_info_hidden">隐藏的应用程序及其小部件从抽屉中隐藏</string>
+    <string name="suggestion_pref_screen_title">建议</string>
+    <string name="suggestion_pref_screen_desc">适用于“所有应用”列表和主屏幕的建议</string>
+    <string name="two_line_labels">允许桌面展示两行标签</string>
+    <string name="icon_size_title">图标大小</string>
+</resources>

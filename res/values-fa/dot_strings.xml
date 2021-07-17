@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 dotOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_show_google_app">نمایش برنامه گوگل</string>
+    <string name="msg_minus_one_on_left">هنگام کشیدن سمت چپ از صفحه اصلی</string>
+    <string name="msg_minus_one_on_right">هنگام کشیدن سمت راست از صفحه اصلی</string>
+    <string name="smartspace_preferences">تنظیمات برگزیده</string>
+    <string name="show_quickspace_title">در یک نگاه</string>
+    <string name="show_quickspace_summary">نمایش در بالای صفحه اصلی</string>
+    <string name="state_loading">در حال انجام/u2026</string>
+    <string name="pref_dt_gesture_title">ژست حرکتی دوبار ضربه زدن</string>
+    <string name="pref_dt_gesture_summary">دوبار ضربه روی فضای خالی برای خاموش کردن صفحه‌نمایش</string>
+    <string name="allow_swipe_down_clearall_title">کشیدن رو به پایین برای بستن همه برنامه ها</string>
+    <string name="allow_swipe_down_clearall_desc">فعال کردن برای پاک کردن همه پنجره‌های باز با کشیدن رو به پایین</string>
+    <string name="trust_apps_manager_name">برنامه‌های پنهان</string>
+    <string name="trust_apps_auth_manager">برای مدیریت برنامه‌های پنهان، قفل را باز کنید</string>
+    <string name="trust_apps_loading">در حال بارگذاری\u2026</string>
+    <string name="trust_apps_no_lock_error">لطفا یک قفل برای کنترل برنامه‌های پنهان و محافظت شده بگذارید</string>
+    <string name="trust_apps_help">راهنما</string>
+    <string name="trust_app_summary">مخفی کردن برنامه ها از منوی کشویی</string>
+    <string name="trust_apps_info_hidden">برنامه‌های مخفی و ویجت‌هایشان از صفحه اصلی پنهان هستند</string>
+    <string name="suggestion_pref_screen_title">پیشنهادها</string>
+    <string name="suggestion_pref_screen_desc">پیشنهاد‌ها در صفحه خانه &amp; برای همه برنامه‌ها</string>
+    <string name="two_line_labels">اجازه دادن دو برچسب خط روی میز کار</string>
+    <string name="icon_size_title">اندازه آیکون</string>
+</resources>

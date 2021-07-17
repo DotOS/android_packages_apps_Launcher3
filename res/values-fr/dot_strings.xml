@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 dotOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_show_google_app">Afficher l\'application Google</string>
+    <string name="msg_minus_one_on_left">Lorsque vous faites glisser depuis la droite sur l\'écran d\'accueil principal</string>
+    <string name="msg_minus_one_on_right">Lorsque vous faites glisser depuis la gauche sur l\'écran d\'accueil principal</string>
+    <string name="smartspace_preferences">Préférences</string>
+    <string name="show_quickspace_title">En un coup d\'œil</string>
+    <string name="show_quickspace_summary">Afficher en haut de votre écran d\'accueil</string>
+    <string name="state_loading">Application en cours\u2026</string>
+    <string name="pref_dt_gesture_title">Double touche</string>
+    <string name="pref_dt_gesture_summary">Double touche sur un espace libre pour éteindre l\'écran</string>
+    <string name="allow_swipe_down_clearall_title">Glisser vers le bas pour effacer tous les applications récentes</string>
+    <string name="allow_swipe_down_clearall_desc">Activer pour effacer toutes les applications récentes de l\'écran d\'aperçu en glissant vers le bas</string>
+    <string name="trust_apps_manager_name">Applications masquées</string>
+    <string name="trust_apps_auth_manager">Déverrouiller pour gérer les applications masquées</string>
+    <string name="trust_apps_loading">Chargement en cours\u2026</string>
+    <string name="trust_apps_no_lock_error">Veuillez configurer un écran de verrouillage pour restreindre l\'accès aux applications</string>
+    <string name="trust_apps_help">Aide</string>
+    <string name="trust_app_summary">Masquer des applications du tiroir d\'applications</string>
+    <string name="trust_apps_info_hidden">Les applications masquées et leurs widgets sont masqués dans le tiroir d\'applications</string>
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">Pour toutes les applications &amp; ajout à l\'écran d\'accueil</string>
+    <string name="two_line_labels">Autoriser les libellés des icônes sur deux lignes sur le bureau</string>
+    <string name="icon_size_title">Taille de l\'icône</string>
+</resources>

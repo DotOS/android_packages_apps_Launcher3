@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 dotOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title_show_google_app">A Google-alkalmazás megjelenítése</string>
+    <string name="msg_minus_one_on_left">Amikor a főképernyőn balra csúsztat</string>
+    <string name="msg_minus_one_on_right">Amikor a főképernyőn jobbra csúsztat</string>
+    <string name="smartspace_preferences">Tulajdonságok</string>
+    <string name="show_quickspace_title">Belepillantás</string>
+    <string name="show_quickspace_summary">Az Ön kezdőképernyőjének tetején jelenik meg</string>
+    <string name="state_loading">Alkalmazás\u2026</string>
+    <string name="pref_dt_gesture_title">A dupla érintéses vezérlés</string>
+    <string name="pref_dt_gesture_summary">Képernyő-kikapcsoláshoz duplakopp egy üres területre</string>
+    <string name="allow_swipe_down_clearall_title">Csúsztassa lefelé az összes előzmény törléséhez</string>
+    <string name="allow_swipe_down_clearall_desc">Engedélyezze az összes előzmény törlését az áttekintő képernyőn lefelé csúsztatással</string>
+    <string name="trust_apps_manager_name">Rejtett alkalmazások</string>
+    <string name="trust_apps_auth_manager">Oldja fel a rejtett alkalmazások kezeléséhez</string>
+    <string name="trust_apps_loading">Betöltés\u2026</string>
+    <string name="trust_apps_no_lock_error">Kérjük, állítson be biztonságos (védett) képernyőzárat az alkalmazás-hozzáférések korlátozására</string>
+    <string name="trust_apps_help">Segítség</string>
+    <string name="trust_app_summary">Alkalmazások elrejtése az alkalmazásfiókból</string>
+    <string name="trust_apps_info_hidden">A rejtett alkalmazások és kisalkalmazásaik az alkalmazásfiókban sem láthatóak</string>
+    <string name="suggestion_pref_screen_title">Javaslatok</string>
+    <string name="suggestion_pref_screen_desc">Javaslatok a Kezdőképernyőhöz és az összes alkalmazáshoz</string>
+    <string name="two_line_labels">Kétsoros ikonfeliratok engedélyezése</string>
+    <string name="icon_size_title">Ikonméret</string>
+</resources>
