@@ -15,26 +15,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="title_show_google_app">Show Google App</string>
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="title_show_google_app">Mostra l\'app Google</string>
+    <string name="msg_minus_one_on_left">Quando scorri a sinistra dalla schermata principale</string>
+    <string name="msg_minus_one_on_right">Quando scorri a destra dalla schermata principale</string>
     <string name="smartspace_preferences">Preferenze</string>
-    <string name="show_quickspace_title">At A Glance</string>
-    <string name="show_quickspace_summary">Show at the top of your Home screen</string>
-    <string name="state_loading">Applying\u2026</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="show_quickspace_title">A colpo d\'occhio</string>
+    <string name="show_quickspace_summary">Mostra in cima alla tua schermata home</string>
+    <string name="state_loading">Applicando\u2026</string>
+    <string name="pref_dt_gesture_title">Gesture doppio tocco</string>
+    <string name="pref_dt_gesture_summary">Tocca due volte sullo spazio vuoto per spegnere lo schermo</string>
+    <string name="allow_swipe_down_clearall_title">Scorri verso il basso per cancellare tutti i recenti</string>
+    <string name="allow_swipe_down_clearall_desc">Abilita per chiudere tutte le app recenti nella schermata panoramica scorrendo verso il basso</string>
     <string name="trust_apps_manager_name">App nascoste</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_auth_manager">Sblocca per gestire le app nascoste</string>
+    <string name="trust_apps_loading">Caricamento\u2026</string>
+    <string name="trust_apps_no_lock_error">Per favore imposta una schermata di blocco sicura per limitare l\'accesso alle app</string>
     <string name="trust_apps_help">Aiuto</string>
     <string name="trust_app_summary">Nascondi le app dal drawer</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
+    <string name="trust_apps_info_hidden">Le app nascoste e i relativi widget sono nascosti dal cassetto</string>
     <string name="suggestion_pref_screen_title">Suggerimenti</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
-    <string name="two_line_labels">Allow two line labels on desktop</string>
+    <string name="suggestion_pref_screen_desc">Per tutte le app &amp; suggerimenti sulla schermata Home</string>
+    <string name="two_line_labels">Consenti etichette su due righe sul desktop</string>
     <string name="icon_size_title">Dimensione icona</string>
 </resources>

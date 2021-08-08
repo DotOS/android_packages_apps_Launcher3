@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">Prikaži Google aplikaciju</string>
     <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
     <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
     <string name="smartspace_preferences">Preferences</string>
