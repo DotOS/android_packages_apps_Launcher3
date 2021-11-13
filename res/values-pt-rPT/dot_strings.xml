@@ -15,26 +15,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="title_show_google_app">Mostrar aplicações Google</string>
-    <string name="msg_minus_one_on_left">Ao deslizar para a esquerda no ecrã inicial</string>
-    <string name="msg_minus_one_on_right">Quando desliza para a direita no ecrã principal</string>
-    <string name="smartspace_preferences">Preferências</string>
-    <string name="show_quickspace_title">Num relance</string>
-    <string name="show_quickspace_summary">Mostrar no topo do ecrã inicial</string>
+    <string name="title_show_google_app">Mostrar a Aplicação Google</string>
+    <string name="msg_minus_one_on_left">Quando deslizar para a esquerda no ecrã principal</string>
+    <string name="msg_minus_one_on_right">Quando deslizar para a direita no ecrã principal</string>
+    <string name="smartspace_preferences">Definições</string>
+    <string name="show_quickspace_title">At a Glance</string>
+    <string name="show_quickspace_summary">Mostrar no topo do seu ecrã inicial</string>
     <string name="state_loading">A aplicar\u2026</string>
-    <string name="pref_dt_gesture_title">Gestos de toque duplo</string>
-    <string name="pref_dt_gesture_summary">Toque duplo num espaço vazio para desligar o ecrã</string>
-    <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos os recentes</string>
-    <string name="allow_swipe_down_clearall_desc">Active para limpar todos os recentes no ecrã geral deslizando para baixo</string>
-    <string name="trust_apps_manager_name">Aplicações ocultas</string>
-    <string name="trust_apps_auth_manager">Desbloquear para gerir as aplicações ocultas</string>
+    <string name="pref_dt_gesture_title">Gesto de toque duplo</string>
+    <string name="pref_dt_gesture_summary">Toque duas vezes num espaço livre para desligar o ecrã</string>
+    <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos as aplicações recentes</string>
+    <string name="allow_swipe_down_clearall_desc">Ao ativar poderá limpar todos os itens no ecrã de apps recentes simplesmente deslizando para baixo</string>
+    <string name="trust_apps_manager_name">Aplicações escondidas</string>
+    <string name="trust_apps_auth_manager">Desbloqueie para poder gerir as aplicações escondidas</string>
     <string name="trust_apps_loading">A carregar\u2026</string>
-    <string name="trust_apps_no_lock_error">Por favor, configure um ecrã de bloqueio seguro para restringir o acesso às aplicações</string>
+    <string name="trust_apps_no_lock_error">Por favor, defina um método de bloqueio protegido para poder bloquear aplicações</string>
     <string name="trust_apps_help">Ajuda</string>
-    <string name="trust_app_summary">Ocultar aplicações da gaveta</string>
-    <string name="trust_apps_info_hidden">As aplicações ocultas e os seus widgets estão escondidos da gaveta de aplicações</string>
+    <string name="trust_app_summary">Esconder aplicações da gaveta</string>
+    <string name="trust_apps_info_hidden">As aplicações escondidas e os seus widgets estão localizados na gaveta de aplicações</string>
     <string name="suggestion_pref_screen_title">Sugestões</string>
     <string name="suggestion_pref_screen_desc">Para todas as aplicações &amp; Sugestões no ecrã inicial</string>
     <string name="two_line_labels">Permitir rótulos com duas linhas na área de trabalho</string>
-    <string name="icon_size_title">Tamanho do Ícone</string>
+    <string name="icon_size_title">Tamanho dos ícones</string>
 </resources>

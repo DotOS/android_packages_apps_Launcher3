@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_quickspace_title">A colpo d\'occhio</string>
     <string name="show_quickspace_summary">Mostra in cima alla tua schermata home</string>
     <string name="state_loading">Applicando\u2026</string>
-    <string name="pref_dt_gesture_title">Gesture doppio tocco</string>
+    <string name="pref_dt_gesture_title">Gesto doppio tocco</string>
     <string name="pref_dt_gesture_summary">Tocca due volte sullo spazio vuoto per spegnere lo schermo</string>
     <string name="allow_swipe_down_clearall_title">Scorri verso il basso per cancellare tutti i recenti</string>
     <string name="allow_swipe_down_clearall_desc">Abilita per chiudere tutte le app recenti nella schermata panoramica scorrendo verso il basso</string>
