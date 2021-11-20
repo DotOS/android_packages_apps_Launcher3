@@ -15,26 +15,26 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="title_show_google_app">Show Google App</string>
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="title_show_google_app">Ipakita ang Google app</string>
+    <string name="msg_minus_one_on_left">Kapag nag-swipe ka pakaliwa mula sa pangunahing Home screen</string>
+    <string name="msg_minus_one_on_right">Kapag nag-swipe ka pakanan mula sa pangunahing Home screen</string>
     <string name="smartspace_preferences">Preferences</string>
-    <string name="show_quickspace_title">At A Glance</string>
-    <string name="show_quickspace_summary">Show at the top of your Home screen</string>
-    <string name="state_loading">Applying\u2026</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
-    <string name="trust_apps_manager_name">Hidden apps</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_app_summary">Hide apps from drawer</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
-    <string name="two_line_labels">Allow two line labels on desktop</string>
-    <string name="icon_size_title">Icon size</string>
+    <string name="show_quickspace_title">Sa isang tingin</string>
+    <string name="show_quickspace_summary">Ipakita sa itaas ng iyong Home screen</string>
+    <string name="state_loading">Inaapply ang\u2026</string>
+    <string name="pref_dt_gesture_title">Double tap na gesture</string>
+    <string name="pref_dt_gesture_summary">I-double tap ang bakanteng espasyo para sa screen-off</string>
+    <string name="allow_swipe_down_clearall_title">Mag-swipe pababa para i-clear ang lahat ng mga kamakailan</string>
+    <string name="allow_swipe_down_clearall_desc">I-enable na i-clear ang lahat ng mga kamakailan sa screen ng pangkalahatang-ideya sa pamamagitan ng pag-swipe pababa</string>
+    <string name="trust_apps_manager_name">Apps na itinago</string>
+    <string name="trust_apps_auth_manager">I-unlock para pamahalaan ang mga nakatagong app</string>
+    <string name="trust_apps_loading">Naglo-load\u2026</string>
+    <string name="trust_apps_no_lock_error">Mangyaring mag-set up ng secure na lock screen upang paghigpitan ang pag-access sa app</string>
+    <string name="trust_apps_help">Tulong</string>
+    <string name="trust_app_summary">Itago ang app mula sa app drawer</string>
+    <string name="trust_apps_info_hidden">Nakatago sa drawer ang mga nakatagong app at ang kanilang mga widget</string>
+    <string name="suggestion_pref_screen_title">Mga Mungkahi</string>
+    <string name="suggestion_pref_screen_desc">Para sa Lahat ng Apps &amp; Mga mungkahi sa home screen</string>
+    <string name="two_line_labels">Payagan ang dalawang linyang label sa desktop</string>
+    <string name="icon_size_title">Laki ng icon</string>
 </resources>

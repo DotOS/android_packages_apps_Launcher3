@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">Uygulanıyor\u2026</string>
     <string name="pref_dt_gesture_title">Çift dokunma hareketi</string>
     <string name="pref_dt_gesture_summary">Ekranı kapatmak için boş bir alana çift dokunun</string>
-    <string name="allow_swipe_down_clearall_title">Tümünü temizlek için aşağı kaydırın</string>
+    <string name="allow_swipe_down_clearall_title">Tümünü temizlemek için aşağı kaydırın</string>
     <string name="allow_swipe_down_clearall_desc">Aşağı kaydırarak tüm son uygulamaları temizlemeyi etkinleştirin</string>
     <string name="trust_apps_manager_name">Gizli uygulamalar</string>
     <string name="trust_apps_auth_manager">Gizli uygulamaları yönetmek için kilidi açın</string>

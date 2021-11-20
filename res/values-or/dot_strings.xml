@@ -16,25 +16,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="title_show_google_app">Show Google App</string>
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_left">ଯେତେବେଳେ ଆପଣ ମୁଖ୍ୟ ଗୃହ ଚିତ୍ରପଟ୍ଟରୁ ବାମକୁ ସ୍ଵାଇପ୍ କରନ୍ତି</string>
+    <string name="msg_minus_one_on_right">ଯେତେବେଳେ ଆପଣ ମୁଖ୍ୟ ଗୃହ ଚିତ୍ରପଟ୍ଟରୁ ଡାହାଣକୁ ସ୍ଵାଇପ୍ କରନ୍ତି</string>
     <string name="smartspace_preferences">ଅଗ୍ରାଧିକାରସମୂହ</string>
     <string name="show_quickspace_title">At A Glance</string>
-    <string name="show_quickspace_summary">Show at the top of your Home screen</string>
+    <string name="show_quickspace_summary">ଆପଣଙ୍କ ଗୃହ ଚିତ୍ରପଟ୍ଟର ଶୀର୍ଷରେ ଦେଖାନ୍ତୁ</string>
     <string name="state_loading">Applying\u2026</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
+    <string name="pref_dt_gesture_title">ଦୁଇଥର ଟ୍ୟାପ୍ ଅଙ୍ଗଭଙ୍ଗୀ</string>
+    <string name="pref_dt_gesture_summary">ସ୍କ୍ରିନ୍-ବନ୍ଦ ପାଇଁ ଖାଲି ଜାଗାରେ ଦୁଇଥର ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
     <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
     <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
     <string name="trust_apps_manager_name">Hidden apps</string>
     <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
     <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_no_lock_error">ଆପ୍ ପ୍ରବେଶକୁ ପ୍ରତିବନ୍ଧିତ କରିବାକୁ ଦୟାକରି ଏକ ସୁରକ୍ଷିତ ତାଲା ଚିତ୍ରପଟ୍ଟ ସେଟ୍ ଅପ୍ କରନ୍ତୁ</string>
     <string name="trust_apps_help">ସହାୟତା</string>
     <string name="trust_app_summary">Hide apps from drawer</string>
     <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">ସମସ୍ତ ଆପ୍ ଓ ଗୃହ ଚିତ୍ରପଟ୍ଟ ପରାମର୍ଶ ପାଇଁ</string>
     <string name="two_line_labels">Allow two line labels on desktop</string>
-    <string name="icon_size_title">Icon size</string>
+    <string name="icon_size_title">ଆଇକନ୍ ଆକାର</string>
 </resources>
